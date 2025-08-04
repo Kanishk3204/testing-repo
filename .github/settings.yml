@@ -5,6 +5,8 @@ rulesets:
         required_approvals: 2
         dismiss_stale_reviews_on_push: true
         require_code_owner_review: true  
-custom_properties:
-  minimum-approvals:
-    value: 3
+      required_status_checks:
+        required_checks:
+          -GitGuardian
+          - Jenkins
+          - SonarQube Code Analysis
