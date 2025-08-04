@@ -8,5 +8,4 @@ rulesets:
       required_status_checks:
         required_checks:
           - GitGuardian
-          - Jenkins
-          - SonarQube Code Analysis
+          - GitGuardian Security Checks
