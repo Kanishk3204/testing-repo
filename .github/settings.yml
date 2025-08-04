@@ -1,0 +1,17 @@
+teams:
+  cloudsurfers:
+    permission: push
+rulesets:
+  - name: Branches rulesets
+    rules:
+      pull_request:
+        required_approvals: 2
+        dismiss_stale_reviews_on_push: true
+        require_code_owner_review: true  
+      required_status_checks:
+        required_checks:
+          - Jenkins
+          - SonarQube Code Analysis
+custom_properties:
+  minimum-approvals:
+    value: 3
