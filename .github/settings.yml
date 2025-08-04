@@ -7,6 +7,6 @@ rulesets:
         require_code_owner_review: true  
       required_status_checks:
         required_checks:
-          -GitGuardian
+          - GitGuardian
           - Jenkins
           - SonarQube Code Analysis
