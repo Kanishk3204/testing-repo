@@ -2,8 +2,8 @@ rulesets:
   - name: Branches rulesets
     rules:
       pull_request:
+        required_approving_review_count: 1
         required_approvals: 2
-        dismiss_stale_reviews_on_push: true
         require_code_owner_review: true  
       required_status_checks:
         required_checks:
